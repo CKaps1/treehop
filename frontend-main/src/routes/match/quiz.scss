@@ -1,0 +1,97 @@
+.start {
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 0;
+  top: 0;
+}
+
+.title {
+  margin: 0 auto;
+  position: relative;
+  color: #33cfff;
+  font-weight: 700;
+  font-size: 120px;
+  padding-top: 170px;
+  line-height: 110px;
+  text-align: center;
+}
+
+.titletext h1 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2em;
+  color: purple;
+}
+
+span {
+  font-weight: 800;
+}
+
+.scroll {
+  cursor: pointer;
+  & path {
+    color: #33cfff;
+    fill: currentColor;
+  }
+  &:hover {
+    transform: translateY(2vh);
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+.instructions {
+  margin: 0 auto;
+  width: 80vh;
+  height: 100vh;
+  overflow: hidden;
+  padding: 60vh 55px 10px 55px;
+  font-size: 30px;
+  color: black;
+}
+
+/* Button */
+.startbutton {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.startbutton:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.startbutton:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.startbutton:hover {
+  color: #fff;
+}
+.startbutton:hover:before {
+  width: 100%;
+}
